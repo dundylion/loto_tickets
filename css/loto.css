@@ -1,0 +1,125 @@
+@font-face {
+	font-family: "Roboto Slab";
+	font-weight: 400;
+	src: url("../fonts/RobotoSlab-Regular.ttf");
+} 
+
+@font-face {
+	font-family: "Roboto Slab";
+	font-weight: 700;
+	src: url("../fonts/RobotoSlab-Bold.ttf");
+} 
+
+
+body {
+	background-color: black;
+	font-family: "Roboto Slab", Helvetica, Arial;
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+}
+
+.field {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h2 {
+	display: inline-block;
+	text-align: center;
+}
+
+.ticket {
+	margin: 0 auto;
+	margin-top: 10px;
+	border: white solid 2px;
+	padding: 1vw;
+	max-width: 750px;
+	min-width: 600px;
+	display: block;
+	flex-grow: 1;
+}
+
+.ticketnum {
+
+	border: white solid 2px;
+	padding: 0 15px;
+}
+
+.gamefield {
+	margin: 0 5vw;
+	margin-top: 10px;
+	border: white solid 3px;
+
+}
+
+.ticketrow {
+	display: flex;
+	flex-wrap: nowrap;
+	border-bottom: white solid 2px;
+}
+.ticketrow:last-of-type {
+	border-bottom: none;
+}
+
+.cell {
+	height: 50px;
+	border: white solid 1px;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+	justify-content: center;
+	font-size: 40px;
+}
+
+.cell:nth-of-type(odd) {
+	background-color: #222222;
+}
+
+.cell:hover {
+	background-color: #ffffff;
+	color: black;
+	transition: 0.2s;
+}
+
+.otherbutton {
+	color: black;
+	background-color: white;
+	padding: 5px 20px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+.otherbutton:hover {
+	background-color: #0000FF;
+	color: white;
+	transition: 0.4s;
+}
+.hidden {
+	display: none;
+}
+
+@media screen and (min-width: 1350px) {
+	.ticket {
+		min-width: 600px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.ticket {
+		min-width: 200px;
+	}
+	.otherbutton {
+		font-size: 0.7em;
+		padding: 5px;
+	}
+	.cell {
+		font-size: 20px;
+		height: 35px;
+	}
+	.ticketnum {
+		font-size: 0.7em;
+	}
+}
