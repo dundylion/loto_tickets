@@ -62,6 +62,9 @@ h2 {
 .ticketrow:last-of-type {
 	border-bottom: none;
 }
+.ticketrow.activated>div.cell {
+	background-color: yellow !important;
+}
 
 .cell {
 	height: 50px;
@@ -82,6 +85,12 @@ h2 {
 	background-color: #ffffff;
 	color: black;
 	transition: 0.2s;
+	cursor: pointer;
+}
+.cell.activated {
+	background-color: green;
+	color: black;
+	text-decoration: line-through;
 }
 
 .otherbutton {
@@ -123,3 +132,5 @@ h2 {
 		font-size: 0.7em;
 	}
 }
+
+
